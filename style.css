@@ -1,0 +1,268 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f5f7fb;
+}
+
+/* NAVBAR */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0a2c5e;
+  padding: 15px 40px;
+}
+
+/* LOGO */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.logo img {
+  height: 7%;
+  width: 100PX;
+}
+
+/* NAV LINKS */
+.nav-links a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* HERO SECTION */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(to right, #0a2c5e, #1e73d8);
+  color: white;
+}
+
+.hero h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* BUTTON */
+.btn {
+  background: rgb(98, 255, 116);
+  color: #0a2c5e;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+/* SERVICES */
+.services {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 50px 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #0a2c5e;
+  color: white;
+}
+
+/* FLOATING BUTTONS */
+.whatsapp, .call {
+  position: fixed;
+  right: 20px;
+  padding: 12px 15px;
+  color: white;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.whatsapp {
+  bottom: 80px;
+  background: #25D366;
+}
+
+.call {
+  bottom: 20px;
+  background: #1e73d8;
+}
+
+/* SERVICE HEADINGS */
+.card h3 {
+  margin-bottom: 15px;
+  color: #0a2c5e;
+}
+
+/* SERVICE TEXT */
+.card li {
+  margin: 6px 0;
+  font-weight: normal;
+  text-align: justify;
+}
+
+/* CTA SECTION */
+.cta {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+/* SMALL HERO (for inner pages) */
+.small-hero {
+  padding: 60px 20px;
+}
+
+.small-hero h1 {
+  font-size: 36px;
+}
+
+/* ACTIVE NAV LINK */
+.nav-links a.active {
+  border-bottom: 2px solid white;
+}
+
+/* ABOUT CONTENT */
+.container {
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.container p{
+  color: #f5f7fb;
+}
+
+.about-box {
+  max-width: 700px;
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+
+    .service {
+      flex: 1 1 300px;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .service h4 {
+      margin-bottom: 10px;
+      color: #e91e63;
+    }
+
+.Service-Head{
+  text-align: center;
+  color:  #ffba0a;
+  background: #888686;
+  background: url('img/Background1.jpg') no-repeat center center/cover;
+}
+
+
+     .zoom-container {
+      overflow: hidden;
+      border-radius: 6px;
+      margin-bottom: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    /* Initial fade-in when page loads */
+    .zoom-container img {
+      width: 50%;
+      opacity: 0;
+      transform: scale(1); /* No zoom initially */
+      transition: transform 1s ease-out, opacity 1s ease-out;
+      animation: fadeIn 1s forwards;
+    }
+
+    /* Zoom effect on hover */
+    .zoom-container img:hover {
+      transform: scale(1.2); /* Zoom to 120% on hover */
+    }
+
+    /* Fade-in keyframes */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+	  
+    
+section {
+            background-color: rgb(1, 5, 65);
+            padding: 25px;
+            margin-bottom: 30px;
+            border-radius: 5px;
+            background-image: -moz-linear-gradient();
+            position: relative;
+            
+          }
+
+          /* CONTAINER */
+.zoom-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* CARD */
+.service-card {
+  width: 220px; /* controls overall size */
+  text-align: center;
+}
+
+/* IMAGE */
+.service-card img {
+  width: 100%;
+  height: 140px;       /* makes image smaller */
+  object-fit: cover;   /* keeps it looking clean */
+  border-radius: 8px;
+}
